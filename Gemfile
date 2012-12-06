@@ -11,10 +11,17 @@ end
 
 gem 'jquery-rails'
 
+group :test, :development do
+gem 'rspec-rails', '~> 2.5'
+end
+
 
 group :test do
   gem 'cucumber-rails'
   gem 'capybara','0.4.1.2'
   gem 'factory_girl'
   gem 'email_spec'
+gem 'database_cleaner'
+
+   
 end
